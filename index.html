@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gulp template</title>
+
+    <!-- <link rel="icon" type="image/x-icon" href="app/images/gulp.svg" /> -->
+    <link rel="stylesheet" href="app/css/style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>Trys gyvūnai</h1>
+    <div class="button">
+      <button onclick="showTab(event,'snake')">Sleeping snake</button>
+      <button onclick="showTab(event,'peacock')">Serious peacock</button>
+      <button onclick="showTab(event,'monkey')">Happy monkey</button>
+    </div>
+
+    <div class="tabsAll">
+      <div id="snake" class="tab">
+        <img src="../app/images/pexels-snake.jpg" alt="Sleeping snake" />
+        <h2>Sleeping snake</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque,
+          cumque.
+        </p>
+      </div>
+
+      <div id="peacock" class="tab">
+        <img src="../app/images/pexels-peacock.jpg" alt="Serious peacock" />
+        <h2>Serious peacock</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
+          explicabo tempora fugiat cumque recusandae reiciendis architecto
+          repudiandae id odit veniam rerum sed alias, quis omnis rem nemo
+          dolores quos facilis?
+        </p>
+      </div>
+
+      <div id="monkey" class="tab">
+        <img src="../app/images/pexels-monkey.jpg" alt="Happy monkey" />
+        <h2>Happy monkey</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+          exercitationem officia qui possimus, rerum suscipit?
+        </p>
+      </div>
+    </div>
+
+    <!-- <script>
+      const tabs = document.querySelectorAll(".tab");
+      const buttons = document.querySelectorAll("button");
+
+      for (let i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = "none";
+      }
+
+      function showTab(e, id) {
+        //hide tabs
+        for (let i = 0; i < tabs.length; i++) {
+          tabs[i].style.display = "none";
+        }
+
+        //Show selected tab
+
+        document.getElementById(id).style.display = "block";
+
+        // Remove selected button styling from all buttons
+
+        for (let i = 0; i < buttons.length; i++) {
+          buttons[i].classList.remove = "selected-button";
+        }
+
+        //Add selected button styling
+
+        e.currentTarget.classList.add("selected-button");
+      } -->
+    <!-- </script> -->
+  </body>
+</html>
